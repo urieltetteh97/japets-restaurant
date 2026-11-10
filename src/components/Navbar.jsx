@@ -15,14 +15,14 @@ export default function Navbar() {
 
   const linkClass = ({ isActive }) =>
     `rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-      isActive ? 'bg-white text-leaf' : 'text-white/85 hover:text-white'
+      isActive ? 'bg-white text-leaf' : 'text-white/85 hover:bg-white/10 hover:text-white'
     }`
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Main">
         <Link to="/" className="font-display text-2xl font-extrabold tracking-tight text-white">
-          JAPETS
+          JAPETS<span className="text-plantain">.</span>
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setOpen(true)}
-            className="rounded-full bg-pepper px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-pepper-700"
+            className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-leaf transition-colors hover:bg-[#f1e7f6]"
           >
             Your order{count > 0 ? ` (${count})` : ''}
           </button>

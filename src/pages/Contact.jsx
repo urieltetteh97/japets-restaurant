@@ -16,8 +16,9 @@ export default function Contact() {
 
   return (
     <div>
-      <div className="bg-leaf px-5 pb-14 pt-28 text-white">
+      <div className="bg-leaf px-5 pb-14 pt-32 text-white">
         <div className="mx-auto max-w-6xl">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-plantain">We'd love to hear from you</p>
           <h1 className="text-5xl font-extrabold md:text-6xl">Contact</h1>
           <p className="mt-3 max-w-lg text-white/80">Questions about an order, a party tray or our hours? Reach us here.</p>
         </div>
@@ -49,7 +50,7 @@ export default function Contact() {
           />
         </div>
 
-        <form onSubmit={submit} className="h-fit rounded-2xl bg-white p-6">
+        <form onSubmit={submit} className="h-fit rounded-3xl bg-white p-6 shadow-sm ring-1 ring-leaf/5 md:p-8">
           <h2 className="text-2xl font-extrabold text-leaf">Send us a message</h2>
           <label className="mt-5 block text-sm font-medium">
             Your name

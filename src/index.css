@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-leaf: #10301f;
-  --color-leaf-700: #1d4a33;
-  --color-pepper: #d4361f;
-  --color-pepper-700: #b02a17;
-  --color-plantain: #f5b93a;
-  --color-mist: #edf2e7;
-  --color-ink: #1e1a16;
+  --color-leaf: #4b2468;
+  --color-leaf-700: #623381;
+  --color-pepper: #7d45a0;
+  --color-pepper-700: #633581;
+  --color-plantain: #f2c56b;
+  --color-mist: #faf7fc;
+  --color-ink: #241d29;
   --font-display: "Bricolage Grotesque", system-ui, sans-serif;
   --font-body: "Figtree", system-ui, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  background: #faf7fc;
 }
 
 body {
@@ -32,8 +33,13 @@ h3 {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-plantain);
+  outline: 3px solid var(--color-pepper);
   outline-offset: 2px;
+}
+
+::selection {
+  background: #eadcf3;
+  color: var(--color-leaf);
 }
 
 @media (prefers-reduced-motion: reduce) {

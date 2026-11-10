@@ -1,5 +1,4 @@
-// PLACEHOLDERS: edit names, prices and descriptions. Put photos in public/images/
-// using the file name in each `image` field (e.g. public/images/jollof-chicken.jpg).
+// Replace these image URLs with JAPETS' own food photography when it is available.
 export const categories = ['All', 'Rice dishes', 'Local classics', 'Grills', 'Sides and drinks']
 
 export const menu = [
@@ -9,7 +8,7 @@ export const menu = [
     category: 'Rice dishes',
     price: 70,
     description: 'Smoky party-style jollof, fried plantain, shito and a grilled chicken leg.',
-    image: '/images/jollof-chicken.jpg',
+    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1400&q=85',
     featured: true,
   },
   {
@@ -18,7 +17,7 @@ export const menu = [
     category: 'Rice dishes',
     price: 70,
     description: 'Vegetable fried rice with spiced chicken and pepper sauce.',
-    image: '/images/fried-rice.jpg',
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'waakye',
@@ -26,7 +25,7 @@ export const menu = [
     category: 'Rice dishes',
     price: 60,
     description: 'Rice and beans with spaghetti, gari, egg, fish, wele and stew.',
-    image: '/images/waakye.jpg',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1400&q=85',
     featured: true,
   },
   {
@@ -35,7 +34,7 @@ export const menu = [
     category: 'Local classics',
     price: 95,
     description: 'Fermented corn and cassava banku with whole grilled tilapia, pepper and onions.',
-    image: '/images/banku-tilapia.jpg',
+    image: 'https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=1400&q=85',
     featured: true,
   },
   {
@@ -44,7 +43,7 @@ export const menu = [
     category: 'Local classics',
     price: 80,
     description: 'Pounded fufu in a peppery tomato broth with goat meat.',
-    image: '/images/fufu-light-soup.jpg',
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'kenkey-fish',
@@ -52,7 +51,7 @@ export const menu = [
     category: 'Local classics',
     price: 65,
     description: 'Ga kenkey with crispy fried fish, shito and fresh pepper.',
-    image: '/images/kenkey-fish.jpg',
+    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'red-red',
@@ -60,7 +59,7 @@ export const menu = [
     category: 'Local classics',
     price: 55,
     description: 'Slow-cooked black-eyed peas in palm oil stew with ripe plantain and gari.',
-    image: '/images/red-red.jpg',
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85&sat=-8',
   },
   {
     id: 'grilled-chicken',
@@ -68,7 +67,7 @@ export const menu = [
     category: 'Grills',
     price: 60,
     description: 'Marinated overnight, grilled over charcoal. Served with kachumbari and pepper.',
-    image: '/images/grilled-chicken.jpg',
+    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'goat-kebab',
@@ -76,7 +75,7 @@ export const menu = [
     category: 'Grills',
     price: 45,
     description: 'Four spiced goat skewers with onions and yaji pepper.',
-    image: '/images/goat-kebab.jpg',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'fried-plantain',
@@ -84,7 +83,7 @@ export const menu = [
     category: 'Sides and drinks',
     price: 25,
     description: 'Ginger and pepper spiced plantain cubes, fried until crisp at the edges.',
-    image: '/images/kelewele.jpg',
+    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'sobolo',
@@ -92,7 +91,7 @@ export const menu = [
     category: 'Sides and drinks',
     price: 15,
     description: 'Chilled hibiscus drink with ginger and cloves.',
-    image: '/images/sobolo.jpg',
+    image: 'https://images.unsplash.com/photo-1513558161293-cda2ea09a66b?auto=format&fit=crop&w=900&q=85',
   },
   {
     id: 'asaana',
@@ -100,6 +99,6 @@ export const menu = [
     category: 'Sides and drinks',
     price: 15,
     description: 'Lightly fermented corn drink, served cold.',
-    image: '/images/asaana.jpg',
+    image: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=85',
   },
 ]

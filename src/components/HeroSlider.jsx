@@ -23,7 +23,7 @@ export default function HeroSlider() {
 
   return (
     <section
-      className="relative h-[100svh] min-h-[560px] w-full overflow-hidden bg-leaf text-white"
+      className="relative h-[88svh] min-h-[620px] w-full overflow-hidden bg-leaf text-white md:h-[92svh]"
       aria-roledescription="carousel"
       aria-label="Featured meals"
       onMouseEnter={() => setPaused(true)}
@@ -42,10 +42,14 @@ export default function HeroSlider() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-leaf via-leaf/50 to-leaf/30" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#24132f]/95 via-[#351a48]/65 to-[#351a48]/10" aria-hidden="true" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#24132f]/50 to-transparent" aria-hidden="true" />
 
-      <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-5 pb-14 pt-28">
-        <p className="mb-3 max-w-md text-sm text-white/80">{site.name}, Tema Community 25</p>
+      <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-5 pb-14 pt-28 md:pb-20">
+        <p className="mb-5 inline-flex w-fit items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm">
+          <span className="h-2 w-2 rounded-full bg-plantain" />
+          {site.name} · Tema Community 25
+        </p>
 
         <AnimatePresence mode="wait">
           <motion.div
@@ -56,8 +60,8 @@ export default function HeroSlider() {
             transition={{ duration: 0.5 }}
             aria-live="polite"
           >
-            <h1 className="max-w-4xl text-5xl font-extrabold leading-[0.95] sm:text-7xl md:text-8xl">{dish.name}</h1>
-            <p className="mt-4 max-w-xl text-base text-white/85 md:text-lg">{dish.description}</p>
+            <h1 className="max-w-4xl text-5xl font-extrabold leading-[0.94] sm:text-7xl md:text-8xl">{dish.name}</h1>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">{dish.description}</p>
           </motion.div>
         </AnimatePresence>
 
@@ -67,11 +71,11 @@ export default function HeroSlider() {
               add(dish)
               setOpen(true)
             }}
-            className="rounded-full bg-pepper px-6 py-3 font-semibold text-white transition-colors hover:bg-pepper-700"
+            className="rounded-full bg-white px-6 py-3 font-semibold text-leaf shadow-lg transition-colors hover:bg-[#f1e7f6]"
           >
             Add to order, {money(dish.price)}
           </button>
-          <Link to="/menu" className="rounded-full border border-white/50 px-6 py-3 font-semibold text-white hover:bg-white/10">
+          <Link to="/menu" className="rounded-full border border-white/55 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur-sm hover:bg-white/20">
             See the full menu
           </Link>
         </div>
